@@ -345,6 +345,29 @@
         border: 1px solid #e0e0e0;
         border-radius: 10px;
         display: block;
+        position: relative;
+        &::after {
+          position: absolute;
+          top: 24px;
+          left: 24px;
+          content: "Choose File";
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          padding: 9px 14px;
+          color: #ffffff;
+          background: #e0e0e0;
+          border-radius: 30px !important;
+          margin-bottom: 10px;
+          border: 0;
+          width: 145px;
+          height: 42px !important;
+          cursor: pointer;
+          z-index: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
       }
       #resume-file {
         font-weight: 700;
@@ -360,6 +383,8 @@
         width: 145px;
         height: 42px !important;
         cursor: pointer;
+        z-index: 2;
+        opacity: 0;
       }
     }
     .jb--button.jb--submit {
@@ -463,5 +488,18 @@
       border: 0;
       margin-bottom: 27px;
     }
+  }
+  .jb--bottom-apply .jb--button {
+    display: inline-block !important;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px !important;
+    color: #ffffff !important;
+    padding: 11px 40px !important;
+    background: #33817d !important;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 30px !important;
+    height: auto !important;
+    border: 0 !important;
   }
 }
