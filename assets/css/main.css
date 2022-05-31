@@ -3725,6 +3725,7 @@ label {
   cursor: pointer;
   z-index: 2;
   opacity: 0;
+  font-size: 0;
 }
 .job-board-area .jb--wrapper .jb--button.jb--submit {
   padding: 8px 35px;
